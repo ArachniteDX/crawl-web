@@ -1,0 +1,54 @@
+enum: SP_JELLO
+monster: MONS_JELLY
+name: Jello
+difficulty: Advanced
+difficulty_priority: 60
+species_flags:
+  - small_torso
+  - barding
+  - no_feet
+  - no_hair
+  - no_bones
+aptitudes:
+  xp: 0
+  hp: 2
+  mp_mod: 0
+  wl: 5
+  ranged weapons: -1
+  throwing: -1
+  armour: -5
+  dodging: 3
+  stealth: 5
+  shields: -5
+  spellcasting: -1
+  alchemy: 6
+  shapeshifting: 6
+  invocations: 1
+size: large
+str: 8
+int: 8
+dex: 10
+levelup_stat_frequency: 4
+mutations:
+  1:
+    MUT_CONSTRICTING_TAIL: 1
+    MUT_ACUTE_VISION: 1
+    MUT_SLOW: 2
+    MUT_DEFORMED: 1
+    MUT_SPIT_POISON: 1
+    MUT_POISON_RESISTANCE: 1
+  13:
+    MUT_CONSTRICTING_TAIL: 1
+recommended_jobs:
+  - berserker
+  - shapeshifter
+  - enchanter
+  - fire elementalist
+  - ice elementalist
+  - warper
+  - hedge wizard
+  - alchemist
+
+walking_verb: Slide
+altar_action: settels in front of
+orc_name: Jellorc
