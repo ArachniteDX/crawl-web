@@ -292,6 +292,7 @@ void fill_doll_equipment(dolls_data &result)
         {
         case SP_ARMATAUR:
         case SP_NAGA:
+	case SP_JELLO:
         case SP_FELID:
         case SP_OCTOPODE:
         case SP_DJINNI:  break;
@@ -612,7 +613,7 @@ void reveal_bardings(const tileidx_t *parts, int (&flags)[TILEP_PART_MAX])
 {
     const tileidx_t base = parts[TILEP_PART_BASE];
     if (is_player_tile(base, TILEP_BASE_NAGA)
-        || is_player_tile(base, TILEP_BASE_ARMATAUR))
+        || is_player_tile(base, TILEP_BASE_ARMATAUR) || is_player_tile(base, TILEP_BASE_JELLO))
     {
         flags[TILEP_PART_BOOTS] = TILEP_FLAG_NORMAL;
     }
