@@ -615,6 +615,8 @@ tileidx_t tilep_species_to_base_tile(int sp, int level)
         return TILEP_BASE_KOBOLD;
     case SP_MUMMY:
         return TILEP_BASE_MUMMY;
+    case SP_JELLO:
+        return TILEP_BASE_JELLO;
     case SP_NAGA:
         return TILEP_BASE_NAGA;
     case SP_ONI:
@@ -759,7 +761,8 @@ void tilep_race_default(int sp, int level, dolls_data *doll)
                                   : TILEP_BASE_MERFOLK;
             hair = TILEP_HAIR_GREEN;
             break;
-        case SP_NAGA:
+        case SP_NAGA:        
+	case SP_JELLO:
         case SP_DJINNI:
             hair = TILEP_HAIR_PART2_RED;
             break;
@@ -1052,7 +1055,7 @@ void tilep_calc_flags(const dolls_data &doll, int flag[])
         flag[TILEP_PART_BEARD] = TILEP_FLAG_HIDE;
 
     if (is_player_tile(doll.parts[TILEP_PART_BASE], TILEP_BASE_NAGA)
-        || is_player_tile(doll.parts[TILEP_PART_BASE], TILEP_BASE_ARMATAUR))
+        || is_player_tile(doll.parts[TILEP_PART_BASE], TILEP_BASE_ARMATAUR)  || is_player_tile(doll.parts[TILEP_PART_BASE], TILEP_BASE_JELLO))
     {
         flag[TILEP_PART_BOOTS] = flag[TILEP_PART_LEG] = TILEP_FLAG_HIDE;
         flag[TILEP_PART_BODY]  = TILEP_FLAG_CUT_BOTTOM;
