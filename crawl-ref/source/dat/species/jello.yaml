@@ -1,6 +1,7 @@
 enum: SP_JELLO
 monster: MONS_JELLY
 name: Jello
+short_name: JO
 difficulty: Advanced
 difficulty_priority: 60
 species_flags:
@@ -50,5 +51,5 @@ recommended_jobs:
   - alchemist
 
 walking_verb: Slide
-altar_action: settels in front of
+altar_action: settles in front of
 orc_name: Jellorc
