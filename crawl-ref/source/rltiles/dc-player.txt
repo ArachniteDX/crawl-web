@@ -47,6 +47,14 @@ kobold2_m
 kobold2_f
 mummy_m MUMMY
 mummy_f
+jello_f
+jello_m
+jello_red_f
+jello_red_m
+jello_green_f
+jello_green_m
+jello_yellow_f
+jello_yellow_m
 naga_green_f NAGA
 naga_green_m
 naga_darkgreen_f
