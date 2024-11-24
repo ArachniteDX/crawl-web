@@ -47,7 +47,7 @@ kobold2_m
 kobold2_f
 mummy_m MUMMY
 mummy_f
-jello_f
+jello_f JELLO
 jello_m
 jello_red_f
 jello_red_m
