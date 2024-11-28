@@ -9084,6 +9084,33 @@ void activate_sanguine_armour()
     }
 }
 
+
+int degrade_armour(int current_time)
+{
+        if(you.has_mutation(MUT_DEGRADE_ARMOUR))
+        {
+		int AC = 0;
+		AC = you.base_ac;
+                if (elapsedTime <= 0)
+                        return;
+                const int degrade_time = 200;
+
+                if(elapsedTime - current_time  > degrade_time)
+                {
+	                AC--;
+                }
+
+        }
+	return AC;
+
+}
+
+bool degrade_valid()
+{
+	you.get_mutation_level(MUT_DEGRADE_ARMOUR, mutation_activity_type::FULL);
+	return true;
+}
+
 /**
  * Refreshes the protective aura around the player after striking with
  * a weapon of protection. The duration is very short.

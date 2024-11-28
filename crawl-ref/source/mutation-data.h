@@ -1047,6 +1047,31 @@ static const mutation_def mut_data[] =
 },
 
 // species-dependent innate mutations
+{ MUT_CONSUME_ARMOUR, 0, 1, mutflag::good, false,
+  "armor consumption",
+
+  {"You are able to consume armor.", "", ""},
+  {"Your hunger grows, no armor is safe from your stomach.", "", ""},
+  {"The idea of eating armor turns your stomach."},
+},
+
+{ MUT_CONSUME_WEAPON, 0, 1, mutflag::good, false,
+  "weapon consumption",
+
+  {"You are able to consume weapons.", "", ""},
+  {"Your hunger grows, no weapon is safe from your stomach.", "", ""},
+  {"The idea of eating weapons turns your stomach."},
+},
+
+{ MUT_DEGRADE_ARMOUR, 0, 1, mutflag::bad, false,
+  "armor degradation",
+
+  {"Your body slowly dissolves all armor you wear.", "", ""},
+  {"Your body starts to dissolve armor.", "", ""},
+  {"Your body ceases to dissolve armor."},
+},
+
+
 { MUT_GOURMAND, 0, 1, mutflag::good, false,
   "gourmand",
 

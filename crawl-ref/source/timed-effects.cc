@@ -233,6 +233,7 @@ static void _evolve(int /*time_delta*/)
     more();
 }
 
+
 // Get around C++ dividing integers towards 0.
 static int _div(int num, int denom)
 {
